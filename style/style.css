@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f2f2f2;
+  color: #333;
+}
+header {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  min-height: 100vh;
+}
+.left-content {
+  background: rgb(23, 55, 93);
+  display: grid;
+}
+.Profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid whitesmoke;
+  width: 90%;
+  margin: 0 auto;
+}
+.Profil img {
+  width: 50%;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.Profil h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: white;
+  margin: 30px 0 10px;
+  font-family: serif;
+}
+.Profil h3 {
+  font-size: clamp(1.1rem, 1.8vw, 2rem);
+  color: rgb(71, 186, 222);
+  margin-bottom: 10px;
+  font-family: serif;
+}
+.adress {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid whitesmoke;
+}
+.adress ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 50px;
+}
+.adress ul li {
+  font-size: 1.8rem;
+  color: white;
+  width: 100%;
+}
+.language {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-langue {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.language h3 {
+  font-size: clamp(1.1rem, 1.8vw, 2rem);
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+}
+.niveau-langue {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+.niveau-langue p {
+  font-size: clamp(0.85rem, 1.2vw, 1.5rem);
+  color: white;
+}
+.niveau-langue div p {
+  display: flex;
+  justify-content: space-between;
+}
+.progress {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ddd;
+}
+.progress-bar-wolof {
+  height: 100%;
+  background: rgb(41, 157, 215);
+  border-radius: 5px;
+}
+.progress-bar-Fr {
+  height: 100%;
+  width: 80%;
+  background: rgb(41, 157, 215);
+  border-radius: 5px;
+}
+.progress-bar-En {
+  height: 100%;
+  width: 40%;
+  background: rgb(41, 157, 215);
+  border-radius: 5px;
+}
+.centre-interet {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.centre-interet h3 {
+  font-size: clamp(1.1rem, 1.8vw, 2rem);
+  color: white;
+  border-bottom: 2px solid wheat;
+}
+.ci-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+.ci-content div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  justify-items: center;
+  font-size: 2rem;
+}
+.ci-content div i {
+  font-size: 3rem;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.apropos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.apropos h2 {
+  font-size: clamp(1.3rem, 2.2vw, 2.5rem);
+  color: #15243c;
+  border-bottom: 2px solid grey;
+}
+.apropos p {
+  font-size: clamp(0.85rem, 1.2vw, 1.5rem);
+  line-height: 1.5;
+  width: 100%;
+  color: #212529;
+}
+.formation {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+.formation h2 {
+  font-size: clamp(1.3rem, 2.2vw, 2.5rem);
+  color: #15243c;
+  border-bottom: 2px solid grey;
+}
+.contenu-formation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formation-content {
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+}
+.date {
+  min-width: 110px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(23, 55, 93);
+}
+.infos-formation {
+  font-size: 1.5rem;
+  color: #222;
+}
+.ecole {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c2929;
+}
+.description {
+  font-size: 1.5rem;
+  color: #3d3c3c;
+  line-height: 1.5;
+}
+.competences {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+.competences h2 {
+  font-size: clamp(1.3rem, 2.2vw, 2.5rem);
+  color: #15243c;
+  border-bottom: 2px solid grey;
+}
+.contenu-competences {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.competence {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.competence-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.progress-bar-html {
+  height: 100%;
+  width: 80%;
+  background: rgb(41, 157, 215);
+  border-radius: 5px;
+}
+.progress-bar-css {
+  height: 100%;
+  width: 75%;
+  background: rgb(41, 157, 215);
+  border-radius: 5px;
+}
+.progress-bar-js {
+  height: 100%;
+  width: 50%;
+  background: rgb(41, 157, 215);
+  border-radius: 5px;
+}
+.progress-bar-prog {
+  height: 100%;
+  width: 65%;
+  background: rgb(41, 157, 215);
+  border-radius: 5px;
+}  
+@media screen and (max-width: 1900px ) {
+    .ci-content div i {
+        font-size: 2rem;
+    }
+    .ci-content div span {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 1700px ) {
+    .adress ul li {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 1500px ) {
+    .centre-interet h3 {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 1410px ) {
+    .Profil h1 {
+        font-size: 1.8rem;
+    }
+    .Profil h3 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1230px ) {
+    .adress ul li {
+        font-size: 1rem;
+    }
+    .Profil h3 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1200px ) {
+ header {
+        display: flex;
+        flex-direction: column;
+    }
+    .adress {
+        margin: 10px auto;
+        border-bottom: none;
+    }
+    .adress ul li {
+        font-size: 1rem;
+    }
+    .language {
+        border-top: 2px solid white;
+    }
+}
+@media screen and (max-width: 700px ) {
+    .left-content {
+        min-height: 100vh;
+    }
+    .language h3 {
+        font-size: 1.5rem;
+    }
+    .apropos h3 {
+        font-size: 1.3rem;
+    }
+    .apropos p {
+        font-size: 0.8rem;
+    }
+    .formation h2 {
+        font-size: 1.3rem;
+    }
+    .infos-formation h3 {
+        font-size: 0.8rem;
+    }
+    .competences h2 {
+        font-size: 1.3rem;
+    }
+    .date {
+        font-size: 1rem;
+    }
+    .ecole {
+        font-size: 0.8rem;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+    .competence-text span {
+        font-size: 1rem;
+    }
+    .progress {
+        height: 10px;
+    }
+}
